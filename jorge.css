@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    font-family:'FF Unit Slab Pro', sans-serif;
+    font-weight: 700;
+    color: #fff ;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: #1b2b60;
+}
+
+
+#logos{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#logo{
+    width: 12rem;
+}
+#fiap{
+    width: 8rem;
+}
+
+
+nav a{
+  font-size: 1.2rem;
+  padding: 0 1rem 0 1rem;
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+#project{
+    background-color: rgb(14, 102, 164);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+    padding-top: 7rem;
+}
+
+#totem{
+    height: 500px;
+}
+
+div#text{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: aliceblue;
+    
+}
+div#text h1{
+    font-size: 3rem;
+    font-family:'FF Unit Slab Pro', sans-serif;
+    width: 35rem;
+}
+
+div#text p{
+    width: 35rem;
+    font-family:'FF Unit Pro', sans-serif;
+    font-size: 1.1rem;
+    padding-bottom: 4.6rem;
+}
