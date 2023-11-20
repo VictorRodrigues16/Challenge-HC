@@ -157,7 +157,7 @@ div#title-data h3{
   display: flex;
   flex-direction: row;
   transform: translateX(200%);
-  transition: transform 0.5s ease;
+  transition: transform 1s ease;
 }
 
 .data-content:nth-of-type(even){
