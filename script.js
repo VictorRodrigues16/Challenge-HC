@@ -113,7 +113,7 @@ setInterval(() => {
 const dataBox = document.querySelectorAll('.data-content')
 
 window.addEventListener('scroll', checkBoxes);
-checkBoxes()
+
 function checkBoxes() {
     const triggerBotton = window.innerHeight = window.innerHeight;
     dataBox.forEach(box => {
