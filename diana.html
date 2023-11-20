@@ -1,1 +1,76 @@
+<footer>
+        <div id="info-footer">
+            <div id="img-footer">
+                <img src="./images/logo icr.png" alt="img-footer">
+            </div>
+                <div id="links">
+                    <div class="list">
+                        <a href="#project">Home</a>
+                        <a href="#funcionalidades">Funcionalidades</a>
+                    </div>
+                    <div class="list">
+                        <a href="#aplicações">Aplicações</a>
+                        <a href="#form">Contato</a>
+                    </div>
+                    <div class="list">
+                        <ul>
+                            <li id="icr" class="link">Site ICR</li>
+                            <li id="fmusp" class="link">Site FMUSP</li>
+                        </ul>    
+                    </div>
+                </div>
+        </div>
+    </footer>
 
+CSS
+div#info-footer{
+    display: flex;
+    justify-content: space-around;
+    gap: 10rem;
+}
+
+div#links{
+    display: flex;
+    gap: 4rem;
+    padding-right: 4rem;
+}
+
+div.list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+div.list ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+div.list a, li{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    text-decoration: none;
+}
+
+.link{
+    cursor: pointer;
+}
+
+footer{
+  background-color: #00A3E0;
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+footer a, li{
+  font-family:'FF Unit Slab Pro', sans-serif;
+  color: #E1E1E1;
+  font-weight: 500;
+  font-size: 1.2rem;
+  list-style: none;
+}
