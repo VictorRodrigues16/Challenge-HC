@@ -1,3 +1,7 @@
+const urlICR = "https://icr.usp.br/"
+const urlFmusp = "https://www.fm.usp.br/fmusp/portal/"
+const icr = document.querySelector('#icr')
+const fmusp = document.querySelector('#fmusp')
 const submitButton = document.querySelector("form button.form-button")
 const emailInput = document.querySelector("input#email")
 
@@ -82,4 +86,42 @@ function voltar(section) {
     moreContent.style.display = 'none'
     verMaisBtn.style.display = 'inline-block'
     voltarBtn.style.display = 'none'
+}
+
+function openNewTab(urlICR){
+    const siteIcr = window.open(urlICR, '_blank')
+    siteIcr.focus()
+}
+
+icr.addEventListener('click', () => {
+    openNewTab(urlICR)
+})
+
+fmusp.addEventListener('click', () => {
+    openNewTab(urlFmusp)
+})
+
+let slides = Array.from(document.querySelectorAll('.carousel .slide'))
+let currentSlide = 0
+
+setInterval(() => {
+    slides[currentSlide].classList.remove('active')
+    currentSlide = (currentSlide+1) % slides.length
+    slides[currentSlide].classList.add('active')
+}, 8000)
+
+const dataBox = document.querySelectorAll('.data-content')
+
+window.addEventListener('scroll', checkBoxes);
+checkBoxes()
+function checkBoxes() {
+    const triggerBotton = window.innerHeight = window.innerHeight;
+    dataBox.forEach(box => {
+        const boxTop = box.getBoundingClientRect().top;
+        if (boxTop < triggerBotton) {
+            box.classList.add('show')
+        } else {
+            box.classList.remove('show')
+        }
+    })
 }
